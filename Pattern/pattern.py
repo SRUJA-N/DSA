@@ -1,12 +1,12 @@
-def print4(n):
+def print1(n):
     for i in range(n, 0,-1):
         print("*"*i)
-def print6(n):
+def print2(n):
     for i in range(1,n+1):
         for j in range(1,n-i+1+1):
             print(j,end="")
         print()
-def print7(n):
+def print3(n):
     for i in range(0,n):
         for j in range(0,n-i-1):
             print(" ",end="")
@@ -15,7 +15,7 @@ def print7(n):
         for l in range(0,n-i-1):
             print(" ",end="")
         print()
-def print8(n):
+def print4(n):
     for i in range(0, n):
         for j in range(0,i):
             print(" ",end="")
@@ -24,7 +24,7 @@ def print8(n):
         for l in range(0,i):
             print(" ",end="")
         print()
-def print9(n):
+def print5(n):
     for i in range(0,n):
         for j in range(0,n-i-1):
             print(" ",end="")
@@ -41,13 +41,13 @@ def print9(n):
         for l in range(0,i):
             print(" ",end="")
         print()
-def print10(n):
+def print6(n):
     for i in range(1,n+1):
         print("*"*i)
     for i in range(n-1,0,-1):
         print("*" * i)
 
-def print11(n):
+def print7(n):
     for i in range(1,n+1):
         for j in range(1,i+1):
             if((i+j)%2==0):
@@ -56,7 +56,7 @@ def print11(n):
                 print("0", end="")
         print()
         """hard"""
-def print12(n):
+def print8(n):
     for i in range(1,n+1):
         for j in range(1,i+1):
             print(j,end="")
@@ -67,7 +67,7 @@ def print12(n):
             print(l, end="")
         print()
 
-def print13(n):
+def print9(n):
     num=1
     for i in range(1,n+1):
         for j in range(1,i+1):
@@ -75,24 +75,24 @@ def print13(n):
             num=num+1
         print()
 
-def print14(n):
+def print10(n):
     for i in range(1,n+1):
         for j in range(n):
             print(chr(65+j),end="")
         n=n-1
         print()
-def print15(n):
+def print11(n):
     for i in range(1,n+1):
         for j in range(i):
             print(chr(65+j),end="")
         print()
 
-def print16(n):
+def print12(n):
     for i in range(0, n + 1):
         for j in range(i):
             print(chr(64+i),end="")
         print()
-def print17(n):
+def print13(n):
     num=1
     for i in range(1,n+1):
         b=(2 * i)/2 - 1
@@ -111,7 +111,8 @@ def print17(n):
         for j in range(n-i):
             print("-",end="")
         print()
-print17(5)
+print13(5)
+
 
 
 
