@@ -92,27 +92,37 @@ def print12(n):
         for j in range(i):
             print(chr(64+i),end="")
         print()
-def print13(n):
-    num=1
-    for i in range(1,n+1):
-        b=(2 * i)/2 - 1
-        w=chr(64)
-        for j in range(n-i):
-            print("-",end="")
-        for k in range((2*i)-1):
-            if(k<b):
-               print(w+num,end="")
-               num=num+1
-            else:
-                print(w+num,end="")
-                num=num-1
-
-
-        for j in range(n-i):
-            print("-",end="")
+def print18(n):
+    for i in range(n):
+        for j in range(i+1):
+            print(chr(69-j),end="")
         print()
-print13(5)
+def print19(n):
+    for i in range(n//2):
+        stars = n//2 - i
+        dashes = i * 2
+        print("*"*stars + "-"*dashes + "*"*stars)
+    for i in range(n//2, 0, -1):
+        stars = n//2 - i
+        dashes = i * 2
+        print("*"*stars + "-"*dashes + "*"*stars)
+
+
+
+def print20(n):
+    for i in range(n):
+        if(i==0 or i==n-1):
+            print("*"*n)
+        else:
+            print("*"+" "*(n-2)+"*")
 
 
 
 
+
+
+
+
+
+
+print20(4)
